@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.grid2col_2-1 {
+  display: grid;
+  gap: 10px;
+  background-color: rgb(220, 207, 223);
+}
+.grid2col_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: rgb(220, 207, 223);
+}
+
+@media (width>=500px) {
+  .grid2col_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .order {
+    order: -1;
+  }
+}
